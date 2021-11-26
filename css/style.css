@@ -1,0 +1,204 @@
+
+*{
+ margin: 0; 
+ padding: 0;
+ box-sizing: border-box;
+  
+}
+
+body {
+  font-family: "Poppins", Georgia, 'Times New Roman', Times, serif;
+  background:#1F1F1F ;
+}
+@keyframes animate {
+  0%{ background: linear-gradient(blue,white); transform: translateY(0);}
+  50%{ background: repeating-linear-gradient(red,white);}
+  75%{ background: linear-gradient(blue,white);}
+  
+100%{ background: linear-gradient(red,white);}
+
+}
+  
+
+.container{
+ color: black;
+ display: flex;
+ float: right;
+justify-content: space-between;
+ margin-right: 10px;
+
+ 
+
+}
+.min-container{
+  
+  animation: animate 3s linear infinite;
+  
+  
+}
+.min-container span{
+  margin-left:40px;
+  border: 1px solid black;
+  
+  
+  
+}
+
+/*----drop -----down*/
+.drop-down{
+ position: relative;
+ display: inline-block;
+ margin-left: 4px;
+ 
+}
+.drop-content{
+  line-height: 2;
+  font-size: 20px;
+  display: none;
+  background: #0000;
+  position: absolute;
+  color: white;
+  
+  z-index: 1;
+  box-shadow: 0 10px 10px 0px rgba(0,0,0,0.3);
+}
+
+.btn{
+ margin-right: 40px;
+ border-radius: 1px;
+ color: white;
+ font-size: 25px;
+background: #0000;
+ 
+}
+
+
+.drop-content a{
+  text-decoration: none;
+  color:white;
+/* margin: 20px;*/
+}
+
+ .drop-down:hover .drop-content{
+  display: block;
+ 
+  
+}  
+  /*----------about-----*/
+  
+  
+  
+  .about-page{
+    background: #0000;
+    border: 0.1px solid darkgoldenrod;
+    color:white;
+    width: 300px;
+  
+    margin-left:50px;
+    margin-top: 200px;
+    
+   
+  }
+  .about-content{
+    padding: 20px;
+    margin-top: 100px;
+    display: inline-block;
+    word-spacing: 3px;
+    
+  }
+  .about-content a{
+    text-decoration: none;
+    
+    
+  }
+  
+  /*-------cmands--------*/
+  @keyframes met{
+   
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+       
+  }
+  .command-page{
+  margin-top: 150px;
+  
+    justify-content: center;
+    border: 0.3px solid white;
+    color: white;
+    border-radius: 10px;
+       background: linear-gradient(-45deg, #ee7752, rgba(79,70,229, 1), #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+	animation: met 15s ease infinite;
+
+  }
+ .command-content details{
+    
+   margin-left: 10px; 
+  box-shadow: 0 6px 10px 6px rgba(0,0,0,0.5)
+  }
+  
+  .command-content details img{
+   width: 300px;
+   height: 200px;
+    
+  }
+  /*------bannerrrrr------------*/
+  
+  
+  .banner{
+    position: absolute;
+    top:0;
+    left:0;
+    object-fit: cover;
+    width: 100%;
+    height:100%;
+    pointer-events: none;
+  }
+  .html{
+    
+  background:gold;
+    width: 300px;
+    height: 200px;
+    padding: 10px 10px 10px;
+    margin-left: 50px;
+    margin-top: 20px;
+    box-shadow: 0 10px 10px 0px rgba(0,0,0,0.5);
+   color:white;
+  }
+  
+  .footer-page{
+    margin-left: 6em;
+    position: absolute;
+ 
+    color: grey;
+    font-size: 20px;
+  
+  }
+  .footer-content{
+   display:block;
+  
+    margin: 10px;
+   line-height: 2;
+  }
+  .footer-content h3{
+    text-align: center;
+  box-shadow: 0 10px 10px 0px rgba(0,0,0,0.5);
+ 
+    
+  }
+  .footer-content a{
+    text-align: center;
+    font-size: 15px;
+    display: block;
+    box-shadow: 0 10px 10px 0px rgba(0,0,0,0.5);
+line-height: 5;
+    text-decoration: none;
+    color: white;
+  }
